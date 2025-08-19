@@ -1,6 +1,13 @@
 import { fontFamily } from  "tailwindcss/defaultTheme";
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+   content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/hooks/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/service/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/interfaces/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
